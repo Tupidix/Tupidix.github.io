@@ -53,8 +53,18 @@ ul {
   padding: 0;
 }
 
-#competence div{
+#fonctionnalites{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+#fonctionnalites div{
+  width: 400px;
+}
+
+#competence div{
 border-color: black;
 border-style: solid;
 width:25%;
@@ -117,6 +127,16 @@ padding: 0 1rem 1rem 1rem;
 
 #design div p{
   width: 420px;
+}
+
+footer {
+  padding: 1rem 4rem;
+  text-align:left;
+  background-color: var(--light-pimary-color);
+  color: var(--light-background);
+  h2{
+    color: var(--light-background);
+  }
 }
 
 /*bouton*/
