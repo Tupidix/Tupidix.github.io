@@ -111,13 +111,6 @@ padding: 0 1rem 1rem 1rem;
   justify-content: space-around;
 }
 
-#design div{
-  display:flex;
-  flex-direction: column;
-justify-content: center;
-justify-content: space-around;
-}
-
 #hisoka p {
   width: 800px;
 }
