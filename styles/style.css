@@ -2,11 +2,33 @@ body {
   padding: 2rem 0;
   text-align: center;
   font-family: system-ui, Roboto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h1 {
+  color: blueviolet;
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
 }
 
 h2{
   color: blueviolet;
   margin-top: 3rem;
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+h3 {
+  color: blueviolet;
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
 }
 
 #pfp {
@@ -48,16 +70,16 @@ padding: 0 1rem 1rem 1rem;
 
 #rythm {
   color: white;
-  background-color: orange;
-  padding: 1rem 8rem;
+  background-color: #a155e7;
+  padding: 2rem 8rem;
   display: flex;
   justify-content: space-around;
 }
 
 #spotlified {
   color: white;
-  background-color: blue;
-  padding: 1rem 8rem;
+  background-color: blueviolet;
+  padding: 2rem 8rem;
   display: flex;
   justify-content: space-around;
 }
@@ -66,8 +88,12 @@ padding: 0 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 45%;
+}
+
+#site h3 {
+  color: white;
 }
 
 #corps {
