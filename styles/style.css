@@ -285,5 +285,6 @@ body.dark {
   }
   #presentation{
     background-color: var(--dark-primary-color);
+    margin-bottom: 1rem;
   }
 }
