@@ -105,6 +105,13 @@ padding: 0 1rem 1rem 1rem;
   color: var(--light-background);
 }
 
+#design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: top;
+}
+
 /*bouton*/
 .frame {
   width: 90%;
