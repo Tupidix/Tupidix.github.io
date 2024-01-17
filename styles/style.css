@@ -180,7 +180,7 @@ button {
 }
 
 #gangnam {
-  font-family: system-ui, Roboto;
+  font-family: "Chivo Mono", monospace;
   font-size: 27px;
   padding: 5px 0 0 10px;
   color: var(--dark-primary-color);
@@ -263,4 +263,22 @@ body.dark {
   font-size: 18px;
   font-weight: 600;
   color: var(--dark-font-color);
+  h1{
+    color: var(--dark-primary-color);
+    font-family: "Chivo Mono", monospace;
+    font-size: 50px;
+  }
+  h2{
+    color: var(--dark-primary-color);
+    font-family: "Chivo Mono", monospace;
+    font-size: 40px;
+  }
+  h3{
+    color: var(--dark-primary-color);
+    font-family: "Chivo Mono", monospace;
+    font-size: 30px;
+  }
+  #presentation{
+    background-color: var(--dark-primary-color);
+  }
 }
