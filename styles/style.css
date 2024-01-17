@@ -139,6 +139,19 @@ footer {
   }
 }
 
+#phone {
+  width: 150px;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
+
+#mail {
+  width: 270px;
+  display: flex;
+  justify-content: space-around;
+}
+
 /*bouton*/
 .frame {
   width: 90%;
@@ -246,6 +259,18 @@ button {
 
 img {
   border-radius: 1rem;
+}
+
+#mail img{
+  border-radius:0;
+}
+
+#phone p{
+  margin: 0;
+}
+
+#mail p{
+  margin: 0;
 }
 
 .slider:before {
