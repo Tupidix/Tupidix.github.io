@@ -1,6 +1,12 @@
 body {
   padding: 2rem 0;
   text-align: center;
+  font-family: system-ui, Roboto;
+}
+
+h2{
+  color: blueviolet;
+  margin-top: 3rem;
 }
 
 #pfp {
@@ -22,11 +28,12 @@ ul {
 }
 
 #competence div{
+
 border-color: black;
 border-style: solid;
-width:30%;
+width:20%;
 border-radius: 2rem;
-padding: 0 0 1rem;
+padding: 0 1rem 1rem 1rem;
 }
 
 #presentation {
@@ -40,16 +47,29 @@ padding: 0 0 1rem;
 }
 
 #rythm {
+  color: white;
   background-color: orange;
   padding: 1rem 8rem;
   display: flex;
   justify-content: space-around;
 }
 
-#rythm div {
+#spotlified {
+  color: white;
+  background-color: blue;
+  padding: 1rem 8rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#site {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 45%;
+}
+
+#corps {
+  display: none;
 }
