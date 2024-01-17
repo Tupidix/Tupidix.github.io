@@ -1,5 +1,11 @@
+:root{
+  --light-background: #ebe9e9;
+  --light-pimary-color: #7360DF;
+}
+
 body {
-  padding: 2rem 0;
+  background-color: var(--light-background);
+  padding: 1rem 0;
   text-align: center;
   font-family: system-ui, Roboto;
   font-size: 18px;
@@ -7,7 +13,7 @@ body {
 }
 
 h1 {
-  color: blueviolet;
+  color: var(--light-pimary-color);
   font-family: "Salsa", cursive;
   font-weight: 400;
   font-style: normal;
@@ -15,7 +21,7 @@ h1 {
 }
 
 h2{
-  color: blueviolet;
+  color: var(--light-pimary-color);
   margin-top: 3rem;
   font-family: "Salsa", cursive;
   font-weight: 400;
@@ -24,7 +30,7 @@ h2{
 }
 
 h3 {
-  color: blueviolet;
+  color: var(--light-pimary-color);
   font-family: "Salsa", cursive;
   font-weight: 400;
   font-style: normal;
@@ -59,9 +65,14 @@ padding: 0 1rem 1rem 1rem;
 }
 
 #presentation {
-  background-color: blueviolet;
-  color: white;
+  background-color: var(--light-pimary-color);
+  color: var(--light-background);
   padding: 1rem 16rem;
+}
+
+#presentation h2 {
+  margin: 0;
+  color: var(--light-background);
 }
 
 #topInfo {
@@ -69,7 +80,7 @@ padding: 0 1rem 1rem 1rem;
 }
 
 #rythm {
-  color: white;
+  color: var(--light-background);
   background-color: #a155e7;
   padding: 2rem 8rem;
   display: flex;
@@ -77,8 +88,8 @@ padding: 0 1rem 1rem 1rem;
 }
 
 #spotlified {
-  color: white;
-  background-color: blueviolet;
+  color: var(--light-background);
+  background-color: var(--light-pimary-color);
   padding: 2rem 8rem;
   display: flex;
   justify-content: space-around;
@@ -93,9 +104,69 @@ padding: 0 1rem 1rem 1rem;
 }
 
 #site h3 {
-  color: white;
+  color: var(--light-background);
 }
 
 #corps {
   display: none;
+}
+
+/*bouton*/
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: var(--light-background);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: system-ui, Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-01 {
+  background: var(--light-pimary-color);
+  border: none;
+  z-index: 1;
+}
+.btn-01:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #C499F3;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-01:hover {
+  color: var(--light-background);
+}
+.btn-01:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-01:active {
+  top: 2px;
 }
