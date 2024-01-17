@@ -8,47 +8,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+<script src="app.js" module defer></script>
 </head>
-<body>
-    <div id="topInfo">
-    <h1>Ryan Dorasamy</h1>
-    <img src="images/ryan.jpg" id="pfp">
-    </div>
-    <div id="presentation">
-    <h2>Bienvenue sur mon portfolio !</h2>
-    <p>Je suis actuellement étudiant en troisième année de Bachelor en Communication des Médias à l'HEIG-VD, passionné par le monde captivant du web. Mon parcours académique m'a permis d'acquérir une solide base en communication digitale, en design graphique, et en développement de sites web.
-    </p>
-    <p>
-    Mon objectif est de créer des expériences en ligne captivantes et fonctionnelles, en mettant en œuvre des compétences variées, allant du design créatif à la programmation rigoureuse.  
-    </p>
-    </div>
-    <h2>Compétences</h2>
-    <div id="competence">
-        <div>
-            <h3>Langages</h3>
-            <p>Grâce à mes expériences à l'HEIG-VD j'ai appris à coder dans divers langages de programmation.</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Vue.js</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>Git</li>
-            </ul>
+<body id="body" class="light">
+    <div class="content">
+        <p id="gangnam">Tupidix</p>
+		<label class="switch" for="theme-switch">
+			<input type="checkbox" id="theme-switch">
+			<span class="slider round"></span>
+		</label>
+        <p id="normal">Ryan Dorasamy</p>
+	</div>
+    <div id="defaut" class="active">
+        <div id="topInfo">
+            <h1>Ryan Dorasamy</h1>
+            <img src="images/ryan.jpg" id="pfp">
         </div>
-        <div>
-            <h3>Logiciels</h3>
-            <p>Ma formation à l'eracom et l'HEIG m'ont également appris à créer des maquettes et des designs.</p>
-            <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Indesign</li>
-                <li>Premiere Pro</li>
-                <li>Figma</li>
-            </ul>
+        <div id="presentation">
+            <h2>Bienvenue sur mon portfolio !</h2>
+            <p>Je suis actuellement étudiant en troisième année de Bachelor en Communication des Médias à l'HEIG-VD, passionné par le monde captivant du web. Mon parcours académique m'a permis d'acquérir une solide base en communication digitale, en design graphique, et en développement de sites web.
+            </p>
+            <p>
+            Mon objectif est de créer des expériences en ligne captivantes et fonctionnelles, en mettant en œuvre des compétences variées, allant du design créatif à la programmation rigoureuse.  
+            </p>
         </div>
-        <div>
+        <h2>Compétences</h2>
+        <div id="competence">
+            <div>
+                <h3>Langages</h3>
+                <p>Grâce à mes expériences à l'HEIG-VD j'ai appris à coder dans divers langages de programmation.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Logiciels</h3>
+                <p>Ma formation à l'eracom et l'HEIG m'ont également appris à créer des maquettes et des designs.</p>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Indesign</li>
+                    <li>Premiere Pro</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div>
             <h3>Langues</h3>
             <p>Je parle français et ma mère me parle en allemand depuis que je suis petit. J'ai appris l'anglais à l'école et en voyage.</p>
             <ul>
@@ -56,15 +66,15 @@
                 <li>Anglais niveau C1</li>
                 <li>Allemand niveau B2</li>
             </ul>
+            </div>
         </div>
-    </div>  
         <h2>Sites web</h2>
-            <div id="rythm">
+        <div id="rythm">
             <div id="site">
-            <h3>Rythm Masters</h3>
-            <p>Voici mon tout Premier site web, réalisé pour mon travail de diplôme avec mes connaissance en 2021. Ce site m'a permis d'obtenir la note de 6. Il a été codé uniquement en HTML et CSS. Ce site web présente divers jeux de rythmes ainsi que leurs spécificités.
-            </p>
-            <button class="custom-btn btn-01">Vers le site</button>
+                <h3>Rythm Masters</h3>
+                <p>Voici mon tout Premier site web, réalisé pour mon travail de diplôme avec mes connaissance en 2021. Ce site m'a permis d'obtenir la note de 6. Il a été codé uniquement en HTML et CSS. Ce site web présente divers jeux de rythmes ainsi que leurs spécificités.
+                </p>
+                <button class="custom-btn btn-01">Vers le site</button>
             </div>
             <div>
                 <img src="images/rythmMaster.png" width="600px">
@@ -75,12 +85,11 @@
                 <img src="images/rythmMaster.png" width="600px">
             </div>
             <div id="site">
-            <h3>Spotlified</h3>
-            <p>Ce projet nous a aidé à nous familiariser avec le JavaScript et à faire des requêtes API. Il s'agit d'un lecteur de musique sur lequel nous avons implémenté diverses Fonctionnalités. 
-            </p>
-            <button class="custom-btn btn-01">Vers le site</button>
+                <h3>Spotlified</h3>
+                <p>Ce projet nous a aidé à nous familiariser avec le JavaScript et à faire des requêtes API. Il s'agit d'un lecteur de musique sur lequel nous avons implémenté diverses Fonctionnalités. 
+                </p>
+                <button class="custom-btn btn-01">Vers le site</button>
             </div>
-        </div>
         </div>
     <h2>Designs graphiques</h2>
     <div>
@@ -110,6 +119,14 @@
         </div>
     </div>
     <h2>Fonctionnalités</h2>
+</div>
+<div id="special" class="inactive">
+    <div id="topInfo">
+        <h1>Ryan Dorasamy</h1>
+        <img src="images/ryan.jpg" id="pfp">
+    </div>
+</div>
+<!-- <script src="app.js"></script> -->
 </body>
 <footer></footer>
 </html>

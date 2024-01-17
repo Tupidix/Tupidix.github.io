@@ -1,15 +1,13 @@
 :root{
+  /* light */
   --light-background: #ebe9e9;
   --light-pimary-color: #7360DF;
-}
 
-body {
-  background-color: var(--light-background);
-  padding: 1rem 0;
-  text-align: center;
-  font-family: system-ui, Roboto;
-  font-size: 18px;
-  font-weight: 600;
+  /* dark */
+  --dark-background: #1a1a1a;
+  --dark-font-color: #ebe9e9;
+  --dark-primary-color: #03ac13;
+
 }
 
 h1 {
@@ -107,10 +105,6 @@ padding: 0 1rem 1rem 1rem;
   color: var(--light-background);
 }
 
-#corps {
-  display: none;
-}
-
 /*bouton*/
 .frame {
   width: 90%;
@@ -169,4 +163,104 @@ button {
 }
 .btn-01:active {
   top: 2px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 0 4rem;
+}
+
+#normal {
+  font-family: "Salsa", cursive;
+  padding: 15px;
+  font-size: 24px;
+  color: var(--light-pimary-color);
+}
+
+#gangnam {
+  font-family: system-ui, Roboto;
+  font-size: 27px;
+  padding: 5px 0 0 10px;
+  color: var(--dark-primary-color);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  width: 80px;
+}
+
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #03ac13;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+.slider.round {
+  border-radius: 30px;
+  background-color: var(--light-pimary-color);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.inactive {
+  display: none;
+}
+
+
+body.light {
+  background-color: var(--light-background);
+  padding: 1rem 0;
+  text-align: center;
+  font-family: system-ui, Roboto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body.dark {
+  background-color: var(--dark-background);
+  padding: 1rem 0;
+  text-align: center;
+  font-family: system-ui, Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-font-color);
 }
